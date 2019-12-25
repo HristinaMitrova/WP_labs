@@ -1,0 +1,62 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+GET http://localhost:8080/rest/ingredients
+page-size:10
+
+###
+POST http://localhost:8080/rest/ingredients
+Content-Type: application/x-www-form-urlencoded
+
+
+
+###
+POST http://localhost:8080/rest/ingredients
+Content-Type: application/x-www-form-urlencoded
+
+###
+POST http://localhost:8080/rest/ingredients
+Content-Type: application/x-www-form-urlencoded
+
+###
+PATCH http://localhost:8080/rest/ingredients/tomatosauce
+Content-Type: application/x-www-form-urlencoded
+
+
+
+###
+GET http://localhost:8080/rest/pizzas
+
+###
+PUT http://localhost:8080/rest/pizzas/Margherita
+Content-Type: application/x-www-form-urlencoded
+
+###
+###
+DELETE http://localhost:8080/rest/pizzas/Margherita
+
+###
+GET http://localhost:8080/rest/pizzas/compare?pizza1=Carbonara&pizza2=Margherita
+
+###
+GET http://localhost:8080/rest/pizzas?totalIngredients=3
+
+###
+GET http://localhost:8080/rest/ingredients/mozarella/pizzas
+
+###
+POST http://localhost:8080/rest/pizzas
+Content-Type: application/x-www-form-urlencoded
+
+###
+GET http://localhost:8080/rest/ingredients?spicy=true
+page-size:10
+
+###
+DELETE http://localhost:8080/rest/ingredients/tomatosauce
+
+###
